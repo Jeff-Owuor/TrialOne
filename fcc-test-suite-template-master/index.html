@@ -28,45 +28,45 @@
 <div class="parent container d-flex justify-content-center align-items-center h-100 card" style="width: 40rem;">
     <form class="card-body" id="survey-form">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+        <label for="exampleInputEmail1" id="name-label" class="form-label">Name</label>
+        <input type="text" placeholder="name" class="form-control" id="name" aria-describedby="emailHelp" required>
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" required>
+        <label for="exampleInputEmail1" id="email-label" class="form-label">Email address</label>
+        <input type="email" placeholder="email" class="form-control" id="email" aria-describedby="emailHelp" required>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Age</label>
-        <input type="number" class="form-control" id="number" aria-describedby="emailHelp" min="100" max="10000">
+        <label for="exampleInputEmail1" id="number-label"  class="form-label">Age</label>
+        <input type="number" class="form-control" id="number" placeholder="0" aria-describedby="emailHelp" min="100" max="10000">
       </div>
       
       <div class="mb-3">
         <label for="disabledSelect" class="form-label">Which option best describes your current role?</label>
-        <select id="disabledSelect" class="form-select">
-          <option>Student</option>
-          <option>Full Time Job</option>
-          <option>Part Time Job</option>
-          <option>Prefer Not To Say</option>
-          <option>Other</option>
+        <select  id="dropdown" id="disabledSelect" class="form-select">
+          <option value="Student">Student</option>
+          <option value="full">Full Time Job</option>
+          <option value="part">Part Time Job</option>
+          <option value="not">Prefer Not To Say</option>
+          <option value="other">Other</option>
         </select>
       </div>
 
       <h2>Would you recommend Microverse to a friend?</h2>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input value="ok" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">
           Definitely
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input value="maybe" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
         <label class="form-check-label" for="flexRadioDefault2">
           Maybe
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input value="not sure" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
         <label class="form-check-label" for="flexRadioDefault2">
           Not Sure
         </label>
@@ -74,26 +74,26 @@
 
       <h2>What would you like to see improved?</h2>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" value="fe" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Frontend</label>
 </div>
 <div class="mb-3 form-check">
-  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-  <label class="form-check-label" for="exampleCheck1">Backend</label>
+  <input type="checkbox" class="form-check-input" value="be" id="exampleCheck1">
+  <label class="form-check-label"  for="exampleCheck1">Backend</label>
 </div>
         <div class="mb-3 form-check">
 
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" value="dv" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Data visualistion</label>
         </div>
         <div class="mb-3 form-check">
 
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" value="ch" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Challenges</label>
 </div>
 <div class="mb-3 form-check">
 
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" value="open" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Open Source Community</label>
       </div>
 
@@ -103,7 +103,7 @@
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
   <label for="floatingTextarea2">Comments</label>
 </div>
-      <button type="submit" class="btn btn-primary mt-2">Submit</button>
+      <button type="submit"  id="submit"  class="btn btn-primary mt-2">Submit</button>
     </form>
   </div>
 
